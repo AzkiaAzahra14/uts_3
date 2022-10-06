@@ -9,7 +9,7 @@ urlpatterns = [
     path('fh/', views.fh, name='fh'),
     path('fk/', views.fk, name='fk'),
     path('fkip/', views.fkip, name='fkip'),
-    path('ft/', views.faperta, name='ft'),
+    path('ft/', views.ft, name='ft'),
     path('pascasarjana/', views.pascasarjana, name='pascasarjana'),
     path('visidanmisi/', views.visidanmisi, name='visidanmisi'),
 ]
