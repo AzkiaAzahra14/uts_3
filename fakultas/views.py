@@ -1,12 +1,12 @@
 from django.shortcuts import render
 from django.template import loader
 from django.http import HttpResponse
-from . models import DosenFaperta,  StaffFaperta, MahasiswaFaperta
+from . models import DosenFaperta, DutaFkip,  StaffFaperta, MahasiswaFaperta
 from . models import  DosenFeb, StaffFeb, MahasiswaFeb
 from . models import  DosenFh, StaffFh, MahasiswaFh
 from . models import  DosenFisip, StaffFisip, MahasiswaFisip
 from . models import  DosenFk, StaffFk, MahasiswaFk    
-from . models import  DosenFkip, StaffFkip, MahasiswaFkip, AkreditasiFkip, HMJFkip
+from . models import  DosenFkip, StaffFkip, MahasiswaFkip, AkreditasiFkip, HMJFkip, RuanganFkip, UKMFkip, DutaFkip, MataKuliahFkip
 from . models import  DosenFt, StaffFt, MahasiswaFt
 from . models import  DosenPascasarjana, StaffPascasarjana, MahasiswaPascasarjana   
 
@@ -85,13 +85,20 @@ def fkip(request):
     mahasiswa = MahasiswaFkip.objects.all()
     akreditasi = AkreditasiFkip.objects.all()
     hmj = HMJFkip.objects.all()
+    ruangan = RuanganFkip.objects.all()
+    ukm = UKMFkip.objects.all()
+    duta = DutaFkip.objects.all()
+    matakuliah = MataKuliahFkip.objects.all()
     context = {
         'dataDosen': dosen,
         'dataStaff': staff,
         'dataMahasiswa': mahasiswa,
         'dataAkreditasi': akreditasi,
         'dataHMJ': hmj,
-         
+        'dataRuangan': ruangan,
+        'dataUKM': ukm,
+        'dataDuta': duta,
+        'dataMataKuliah': matakuliah
     }
     return HttpResponse(template.render(context))
 

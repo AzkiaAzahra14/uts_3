@@ -265,6 +265,31 @@ class HMJFkip(models.Model):
     def str(self):
         return "{}".format(self.nama)
 
+class RuanganFkip(models.Model):
+    nomor = models.CharField(max_length=300, null=True)
+    nama = models.CharField(max_length=50)
+
+    def str(self):
+        return "{}".format(self.nama)
+
+class UKMFkip(models.Model):
+    nama = models.CharField(max_length=50)
+
+    def str(self):
+        return "{}".format(self.nama)
+
+class DutaFkip(models.Model):
+    nama = models.CharField(max_length=50)
+
+    def str(self):
+        return "{}".format(self.nama)
+
+class MataKuliahFkip(models.Model):
+    nama = models.CharField(max_length=50)
+
+    def str(self):
+        return "{}".format(self.nama)
+
 
 class DosenFt(models.Model):
     nip = models.CharField(max_length=50)
