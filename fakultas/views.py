@@ -6,7 +6,7 @@ from . models import  DosenFeb, StaffFeb, MahasiswaFeb
 from . models import  DosenFh, StaffFh, MahasiswaFh
 from . models import  DosenFisip, StaffFisip, MahasiswaFisip
 from . models import  DosenFk, StaffFk, MahasiswaFk    
-from . models import  DosenFkip, StaffFkip, MahasiswaFkip
+from . models import  DosenFkip, StaffFkip, MahasiswaFkip, AkreditasiFkip, HMJFkip
 from . models import  DosenFt, StaffFt, MahasiswaFt
 from . models import  DosenPascasarjana, StaffPascasarjana, MahasiswaPascasarjana   
 
@@ -83,10 +83,14 @@ def fkip(request):
     dosen = DosenFkip.objects.all()
     staff = StaffFkip.objects.all()
     mahasiswa = MahasiswaFkip.objects.all()
+    akreditasi = AkreditasiFkip.objects.all()
+    hmj = HMJFkip.objects.all()
     context = {
         'dataDosen': dosen,
         'dataStaff': staff,
         'dataMahasiswa': mahasiswa,
+        'dataAkreditasi': akreditasi,
+        'dataHMJ': hmj,
          
     }
     return HttpResponse(template.render(context))
@@ -117,15 +121,6 @@ def pascasarjana(request):
     }
     return HttpResponse(template.render())
 
-def selayangpandang(request):
-    template = loader.get_template('selayangpandang.html')
-    return HttpResponse(template.render())
 def visidanmisi(request):
     template = loader.get_template('visidanmisi.html')
-    return HttpResponse(template.render())
-def strukturorganisasi(request):
-    template = loader.get_template('strukturorganisasi.html')
-    return HttpResponse(template.render())
-def maknalambang(request):
-    template = loader.get_template('maknalambang.html')
     return HttpResponse(template.render())

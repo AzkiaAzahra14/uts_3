@@ -253,6 +253,19 @@ class MahasiswaFkip(models.Model):
     def str(self):
         return "{}".format(self.nama)
 
+class AkreditasiFkip(models.Model):
+    nilai = models.CharField(max_length=50)
+
+    def str(self):
+        return "{}".format(self.nama)
+
+class HMJFkip(models.Model):
+    nama = models.CharField(max_length=50)
+
+    def str(self):
+        return "{}".format(self.nama)
+
+
 class DosenFt(models.Model):
     nip = models.CharField(max_length=50)
     nama = models.CharField(max_length=100)
