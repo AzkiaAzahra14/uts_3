@@ -138,6 +138,92 @@
         </tr>
         {% endfor %}
       </table>
+
+      <h2>Data Akreditasi FEB</h2>
+    <table class="table table-striped">
+      <tr>
+        <th>Nilai</th>
+      </tr>
+      {% for akreditasi in dataAkreditasi %}
+      <tr>
+        <td>{{ akreditasi.nilai }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+
+    <h2>Data HMJ FEB</h2>
+    <table class="table table-striped">
+      <tr>
+        <th>Nama</th>
+      </tr>
+      {% for hmj in dataHMJ %}
+      <tr>
+        <td>{{ hmj.nama }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+
+    <h2>Data Ruangan FEB</h2>
+    <table class="table table-striped">
+      <tr>
+        <th>NO</th>
+        <th>Nama</th>
+      </tr>
+      {% for ruangan in dataRuangan %}
+      <tr>
+        <td>{{ ruangan.no }}</td>
+        <td>{{ ruangan.nama }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+
+    <h2>Data UKM FEB</h2>
+    <table class="table table-striped">
+      <tr>
+        <th>Nama</th>
+      </tr>
+      {% for ukm in dataUKM %}
+      <tr>
+        <td>{{ ruangan.nama }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+
+    <h2>Data Duta FEB</h2>
+    <table class="table table-striped">
+      <tr>
+        <th>Nama</th>
+      </tr>
+      {% for duta in dataDuta %}
+      <tr>
+        <td>{{ duta.nama }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+
+    <h2>Data Mata Kuliah FEB</h2>
+    <table class="table table-striped">
+      <tr>
+        <th>Nama</th>
+      </tr>
+      {% for matakuliah in dataMataKuliah %}
+      <tr>
+        <td>{{ matakuliah.nama }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+
+    <h2>Data Prodi FEB</h2>
+    <table class="table table-striped">
+      <tr>
+        <th>Nama</th>
+      </tr>
+      {% for prodi in dataProdi %}
+      <tr>
+        <td>{{ prodi.nama }}</td>
+      </tr>
+      {% endfor %}
+    </table>
     
 
       

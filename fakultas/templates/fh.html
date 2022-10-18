@@ -134,6 +134,91 @@
       {% endfor %}
     </table>
     
+    <h2>Data Akreditasi FH</h2>
+    <table class="table table-striped">
+      <tr>
+        <th>Nilai</th>
+      </tr>
+      {% for akreditasi in dataAkreditasi %}
+      <tr>
+        <td>{{ akreditasi.nilai }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+
+    <h2>Data HMJ FH</h2>
+    <table class="table table-striped">
+      <tr>
+        <th>Nama</th>
+      </tr>
+      {% for hmj in dataHMJ %}
+      <tr>
+        <td>{{ hmj.nama }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+
+    <h2>Data Ruangan FH</h2>
+    <table class="table table-striped">
+      <tr>
+        <th>NO</th>
+        <th>Nama</th>
+      </tr>
+      {% for ruangan in dataRuangan %}
+      <tr>
+        <td>{{ ruangan.no }}</td>
+        <td>{{ ruangan.nama }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+
+    <h2>Data UKM FH</h2>
+    <table class="table table-striped">
+      <tr>
+        <th>Nama</th>
+      </tr>
+      {% for ukm in dataUKM %}
+      <tr>
+        <td>{{ ruangan.nama }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+
+    <h2>Data Duta FH</h2>
+    <table class="table table-striped">
+      <tr>
+        <th>Nama</th>
+      </tr>
+      {% for duta in dataDuta %}
+      <tr>
+        <td>{{ duta.nama }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+
+    <h2>Data Mata Kuliah FH</h2>
+    <table class="table table-striped">
+      <tr>
+        <th>Nama</th>
+      </tr>
+      {% for matakuliah in dataMataKuliah %}
+      <tr>
+        <td>{{ matakuliah.nama }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+
+    <h2>Data Prodi FH</h2>
+    <table class="table table-striped">
+      <tr>
+        <th>Nama</th>
+      </tr>
+      {% for prodi in dataProdi %}
+      <tr>
+        <td>{{ prodi.nama }}</td>
+      </tr>
+      {% endfor %}
+    </table>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
   </body>
 </html>

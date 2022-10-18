@@ -43,6 +43,49 @@ class MahasiswaFaperta(models.Model):
     def str(self):
         return "{}".format(self.nama)
 
+class AkreditasiFaperta(models.Model):
+    nilai = models.CharField(max_length=50)
+
+    def str(self):
+        return "{}".format(self.nama)
+
+class HMJFaperta(models.Model):
+    nama = models.CharField(max_length=50)
+
+    def str(self):
+        return "{}".format(self.nama)
+
+class RuanganFaperta(models.Model):
+    nomor = models.CharField(max_length=300, null=True)
+    nama = models.CharField(max_length=50)
+
+    def str(self):
+        return "{}".format(self.nama)
+
+class UKMFaperta(models.Model):
+    nama = models.CharField(max_length=50)
+
+    def str(self):
+        return "{}".format(self.nama)
+
+class DutaFaperta(models.Model):
+    nama = models.CharField(max_length=50)
+
+    def str(self):
+        return "{}".format(self.nama)
+
+class MataKuliahFaperta(models.Model):
+    nama = models.CharField(max_length=50)
+
+    def str(self):
+        return "{}".format(self.nama)
+
+class ProdiFaperta(models.Model):
+    nama = models.CharField(max_length=50)
+
+    def str(self):
+        return "{}".format(self.nama)
+
 class DosenFeb(models.Model):
     nip = models.CharField(max_length=50)
     nama = models.CharField(max_length=100)
@@ -83,6 +126,50 @@ class MahasiswaFeb(models.Model):
 
     def str(self):
         return "{}".format(self.nama)
+
+class AkreditasiFeb(models.Model):
+    nilai = models.CharField(max_length=50)
+
+    def str(self):
+        return "{}".format(self.nama)
+
+class HMJFeb(models.Model):
+    nama = models.CharField(max_length=50)
+
+    def str(self):
+        return "{}".format(self.nama)
+
+class RuanganFeb(models.Model):
+    nomor = models.CharField(max_length=300, null=True)
+    nama = models.CharField(max_length=50)
+
+    def str(self):
+        return "{}".format(self.nama)
+
+class UKMFeb(models.Model):
+    nama = models.CharField(max_length=50)
+
+    def str(self):
+        return "{}".format(self.nama)
+
+class DutaFeb(models.Model):
+    nama = models.CharField(max_length=50)
+
+    def str(self):
+        return "{}".format(self.nama)
+
+class MataKuliahFeb(models.Model):
+    nama = models.CharField(max_length=50)
+
+    def str(self):
+        return "{}".format(self.nama)
+
+class ProdiFeb(models.Model):
+    nama = models.CharField(max_length=50)
+
+    def str(self):
+        return "{}".format(self.nama)
+
 
 
 class DosenFh(models.Model):
@@ -126,6 +213,50 @@ class MahasiswaFh(models.Model):
     def str(self):
         return "{}".format(self.nama)
 
+class AkreditasiFh(models.Model):
+    nilai = models.CharField(max_length=50)
+
+    def str(self):
+        return "{}".format(self.nama)
+
+class HMJFh(models.Model):
+    nama = models.CharField(max_length=50)
+
+    def str(self):
+        return "{}".format(self.nama)
+
+class RuanganFh(models.Model):
+    nomor = models.CharField(max_length=300, null=True)
+    nama = models.CharField(max_length=50)
+
+    def str(self):
+        return "{}".format(self.nama)
+
+class UKMFh(models.Model):
+    nama = models.CharField(max_length=50)
+
+    def str(self):
+        return "{}".format(self.nama)
+
+class DutaFh(models.Model):
+    nama = models.CharField(max_length=50)
+
+    def str(self):
+        return "{}".format(self.nama)
+
+class MataKuliahFh(models.Model):
+    nama = models.CharField(max_length=50)
+
+    def str(self):
+        return "{}".format(self.nama)
+
+class ProdiFh(models.Model):
+    nama = models.CharField(max_length=50)
+
+    def str(self):
+        return "{}".format(self.nama)
+
+
 class DosenFisip(models.Model):
     nip = models.CharField(max_length=50)
     nama = models.CharField(max_length=100)
@@ -167,6 +298,49 @@ class MahasiswaFisip(models.Model):
     def str(self):
         return "{}".format(self.nama)
 
+class AkreditasiFisip(models.Model):
+    nilai = models.CharField(max_length=50)
+
+    def str(self):
+        return "{}".format(self.nama)
+
+class HMJFisip(models.Model):
+    nama = models.CharField(max_length=50)
+
+    def str(self):
+        return "{}".format(self.nama)
+
+class RuanganFisip(models.Model):
+    nomor = models.CharField(max_length=300, null=True)
+    nama = models.CharField(max_length=50)
+
+    def str(self):
+        return "{}".format(self.nama)
+
+class UKMFisip(models.Model):
+    nama = models.CharField(max_length=50)
+
+    def str(self):
+        return "{}".format(self.nama)
+
+class DutaFisip(models.Model):
+    nama = models.CharField(max_length=50)
+
+    def str(self):
+        return "{}".format(self.nama)
+
+class MataKuliahFisip(models.Model):
+    nama = models.CharField(max_length=50)
+
+    def str(self):
+        return "{}".format(self.nama)
+
+class ProdiFisip(models.Model):
+    nama = models.CharField(max_length=50)
+
+    def str(self):
+        return "{}".format(self.nama)
+
 class DosenFk(models.Model):
     nip = models.CharField(max_length=50)
     nama = models.CharField(max_length=100)
@@ -204,6 +378,49 @@ class MahasiswaFk(models.Model):
     alamat = models.CharField(max_length=300)
     foto = models.CharField(max_length=300, null=True)
 
+
+    def str(self):
+        return "{}".format(self.nama)
+
+class AkreditasiFk(models.Model):
+    nilai = models.CharField(max_length=50)
+
+    def str(self):
+        return "{}".format(self.nama)
+
+class HMJFk(models.Model):
+    nama = models.CharField(max_length=50)
+
+    def str(self):
+        return "{}".format(self.nama)
+
+class RuanganFk(models.Model):
+    nomor = models.CharField(max_length=300, null=True)
+    nama = models.CharField(max_length=50)
+
+    def str(self):
+        return "{}".format(self.nama)
+
+class UKMFk(models.Model):
+    nama = models.CharField(max_length=50)
+
+    def str(self):
+        return "{}".format(self.nama)
+
+class DutaFk(models.Model):
+    nama = models.CharField(max_length=50)
+
+    def str(self):
+        return "{}".format(self.nama)
+
+class MataKuliahFk(models.Model):
+    nama = models.CharField(max_length=50)
+
+    def str(self):
+        return "{}".format(self.nama)
+
+class ProdiFk(models.Model):
+    nama = models.CharField(max_length=50)
 
     def str(self):
         return "{}".format(self.nama)
@@ -290,6 +507,12 @@ class MataKuliahFkip(models.Model):
     def str(self):
         return "{}".format(self.nama)
 
+class ProdiFkip(models.Model):
+    nama = models.CharField(max_length=50)
+
+    def str(self):
+        return "{}".format(self.nama)
+
 
 class DosenFt(models.Model):
     nip = models.CharField(max_length=50)
@@ -332,6 +555,49 @@ class MahasiswaFt(models.Model):
     def str(self):
         return "{}".format(self.nama)
 
+class AkreditasiFt(models.Model):
+    nilai = models.CharField(max_length=50)
+
+    def str(self):
+        return "{}".format(self.nama)
+
+class HMJFt(models.Model):
+    nama = models.CharField(max_length=50)
+
+    def str(self):
+        return "{}".format(self.nama)
+
+class RuanganFt(models.Model):
+    nomor = models.CharField(max_length=300, null=True)
+    nama = models.CharField(max_length=50)
+
+    def str(self):
+        return "{}".format(self.nama)
+
+class UKMFt(models.Model):
+    nama = models.CharField(max_length=50)
+
+    def str(self):
+        return "{}".format(self.nama)
+
+class DutaFt(models.Model):
+    nama = models.CharField(max_length=50)
+
+    def str(self):
+        return "{}".format(self.nama)
+
+class MataKuliahFt(models.Model):
+    nama = models.CharField(max_length=50)
+
+    def str(self):
+        return "{}".format(self.nama)
+
+class ProdiFt(models.Model):
+    nama = models.CharField(max_length=50)
+
+    def str(self):
+        return "{}".format(self.nama)
+
 class DosenPascasarjana(models.Model):
     nip = models.CharField(max_length=50)
     nama = models.CharField(max_length=100)
@@ -369,6 +635,49 @@ class MahasiswaPascasarjana(models.Model):
     alamat = models.CharField(max_length=300)
     foto = models.CharField(max_length=300, null=True)
 
+
+    def str(self):
+        return "{}".format(self.nama)
+
+class AkreditasiPascasarjana(models.Model):
+    nilai = models.CharField(max_length=50)
+
+    def str(self):
+        return "{}".format(self.nama)
+
+class HMJPascasarjana(models.Model):
+    nama = models.CharField(max_length=50)
+
+    def str(self):
+        return "{}".format(self.nama)
+
+class RuanganPascasarjana(models.Model):
+    nomor = models.CharField(max_length=300, null=True)
+    nama = models.CharField(max_length=50)
+
+    def str(self):
+        return "{}".format(self.nama)
+
+class UKMPascasarjana(models.Model):
+    nama = models.CharField(max_length=50)
+
+    def str(self):
+        return "{}".format(self.nama)
+
+class DutaPascasarjana(models.Model):
+    nama = models.CharField(max_length=50)
+
+    def str(self):
+        return "{}".format(self.nama)
+
+class MataKuliahPascasarjana(models.Model):
+    nama = models.CharField(max_length=50)
+
+    def str(self):
+        return "{}".format(self.nama)
+
+class ProdiPascasarjana(models.Model):
+    nama = models.CharField(max_length=50)
 
     def str(self):
         return "{}".format(self.nama)
